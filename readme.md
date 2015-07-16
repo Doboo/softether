@@ -1,5 +1,5 @@
-####################################################
-Æô¶¯softether:
+
+start :
  /root/vpnserver/vpnserver start
-Í£Ö¹softether£º
+stop£º
 /root/vpnserver/vpnserver stop
