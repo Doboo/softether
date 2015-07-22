@@ -1,4 +1,3 @@
-
 start :
  /root/vpnserver/vpnserver start
 stop£º

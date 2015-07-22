@@ -13,9 +13,11 @@ function checkos(){
 	echo $OS
 }
 
-#创建启动文件,这个功能好像有问题
+#创建启动文件
 function creat {
-wget -P /etc/init.d  http://x.x.x.x/vpnserver
+
+#wget -P /etc/init.d  http://x.x.x.x/vpnserver
+cp -a /root/softether/vpnserver  /etc/init.d/
 }
 
 function doselect {

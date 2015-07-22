@@ -44,7 +44,7 @@ tar -zxvf softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x64-64bit.tar.gz
 printf "
 ####################################################
 #                                                  #
-# softether vpn server install script for centos6  #
+# softether vpn server install script  #
 # Version: 1.1.0                                   #
 # Author: guoke QQ:38196962                        #
 #                                                  #
