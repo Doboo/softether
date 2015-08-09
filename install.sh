@@ -16,13 +16,15 @@ function checkos(){
 }
 
 function set32 {
-wget http://www.softether-download.com/files/softether/v4.17-9562-beta-2015.05.30-tree/Linux/SoftEther_VPN_Server/32bit_-_Intel_x86/softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x86-32bit.tar.gz
-tar -zxvf softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x86-32bit.tar.gz
+wget http://www.softether-download.com/files/softether/v4.18-9570-rtm-2015.07.26-tree/Linux/SoftEther_VPN_Server/32bit_-_Intel_x86/softether-vpnserver-v4.18-9570-rtm-2015.07.26-linux-x86-32bit.tar.gz
+#wget http://www.softether-download.com/files/softether/v4.17-9562-beta-2015.05.30-tree/Linux/SoftEther_VPN_Server/32bit_-_Intel_x86/softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x86-32bit.tar.gz
+tar -zxvf softether-vpnserver-v4.18-9570-rtm-2015.07.26-linux-x86-32bit.tar.gz
 
 }
 function set64 {
-wget http://www.softether-download.com/files/softether/v4.17-9562-beta-2015.05.30-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x64-64bit.tar.gz
-tar -zxvf softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x64-64bit.tar.gz
+wget http://www.softether-download.com/files/softether/v4.18-9570-rtm-2015.07.26-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.18-9570-rtm-2015.07.26-linux-x64-64bit.tar.gz
+#wget http://www.softether-download.com/files/softether/v4.17-9562-beta-2015.05.30-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x64-64bit.tar.gz
+tar -zxvf softether-vpnserver-v4.18-9570-rtm-2015.07.26-linux-x64-64bit.tar.gz
 }
 
 # function doselect {
