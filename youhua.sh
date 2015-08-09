@@ -17,7 +17,9 @@ function checkos(){
 function creat {
 
 #wget -P /etc/init.d  http://x.x.x.x/vpnserver
+
 cp -a /root/softether/vpnserver  /etc/init.d/
+chmod 777 /etc/init.d/vpnserver
 }
 
 function doselect {
