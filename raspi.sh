@@ -18,7 +18,7 @@ function checkos(){
 function set32 {
 #wget http://www.softether-download.com/files/softether/v4.18-9570-rtm-2015.07.26-tree/Linux/SoftEther_VPN_Server/32bit_-_Intel_x86/softether-vpnserver-v4.18-9570-rtm-2015.07.26-linux-x86-32bit.tar.gz
 #wget http://www.softether-download.com/files/softether/v4.17-9562-beta-2015.05.30-tree/Linux/SoftEther_VPN_Server/32bit_-_Intel_x86/softether-vpnserver-v4.17-9562-beta-2015.05.30-linux-x86-32bit.tar.gz
-mv  /root/softether/softether-vpnserver-v4.18-9570-rtm-2015.07.26-linux-arm_eabi-32bit.tar.gz  /root/ 
+mv  /root/softether/softether.tar.gz  /root/ 
 tar -zxvf softether.tar.gz
 
 }
