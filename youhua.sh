@@ -60,11 +60,11 @@ if [ $OS = "debian" ]; then
    apt-get install dnsmasq -y
    sed -i '/vpnserver/d' /etc/rc.local
   
-    sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
+   sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
    sysctl --system
-    update-rc.d  vpnserver start 2 3 4 5   stop 0 1 6
-	cd /etc/rc2.d
-	ln -s /etc/init.d/vpnserver S20vpnserver
+   update-rc.d  vpnserver start 2 3 4 5   stop 0 1 6
+  cd /etc/rc2.d
+  ln -s /etc/init.d/vpnserver S20vpnserver
 fi
 #Centos6安装
 if [ $OS = "centos" ]; then
@@ -106,11 +106,12 @@ fi
 #Centos6安装
 if [ $OS = "centos" ]; then
    /sbin/service iptables save
+   chmod 777 /etc/rc.d/init.d/vpnserver
 fi
 
 #给予执行权限
 chmod 777 /etc/init.d/vpnserver
-chmod 777 /etc/rc.d/init.d/vpnserver
+
 
 
 #重启服务
