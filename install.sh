@@ -63,11 +63,15 @@ if [ $OS = "debian" ]; then
 apt-get update -y
 #apt-get   -y install wget  build-essential gcc gcc-c++  automake autoconf libtool make
 apt-get   -y install wget  build-essential 
+#备份vpnserver文件
+cp -a /root/vpnserver/vpnserver  /root/vpnserver/vpnserver1
 	#删除exit 0
    sed -i '/exit/d' /etc/rc.local
    #增加启动项
+   echo "cp -a /root/vpnserver/vpnserver1  /root/vpnserver/vpnserver" >>  /etc/rc.local
    echo "/root/vpnserver/vpnserver start" >>  /etc/rc.local
-   #echo "exit 0" >>  /etc/rc.local
+   echo "exit 0" >>  /etc/rc.local
+   chmod 777 /etc/rc.local
 fi
 if [ $OS = "centos" ]; then
 yum update -y

@@ -58,7 +58,13 @@ creat
 #Debian7安装
 if [ $OS = "debian" ]; then
    apt-get install dnsmasq -y
-   sed -i '/vpnserver/d' /etc/rc.local
+   #删除root下启动方式
+   sed -i '/start/d' /etc/rc.local
+   sed -i '/exit/d' /etc/rc.local
+   #重启服务
+   echo "/etc/init.d/vpnserver restart" >>  /etc/rc.local
+   echo "exit 0" >>  /etc/rc.local
+   chmod 777 /etc/rc.local
   
    sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
    sysctl --system

@@ -1,0 +1,9 @@
+/root/vpnserver/vpnserver 文件在系统重启后会丢失
+因此需要在安装之后备份一个，命名为“vpnserver1”
+
+每次在rc.local里面手动复制一个，然后再
+
+/root/vpnserver/vpnserver start
+或者
+/etc/init.d/vpnserver restart
+
