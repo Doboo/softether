@@ -63,9 +63,7 @@ if [ $OS = "debian" ]; then
 apt-get update -y
 #apt-get   -y install wget  build-essential gcc gcc-c++  automake autoconf libtool make
 apt-get   -y install wget  build-essential 
-#备份vpnserver文件
-cp -a /root/vpnserver/vpnserver  /root/vpnserver/vpnserver1
-chmod 777 /root/vpnserver/vpnserver1
+
 	#删除exit 0
    sed -i '/exit/d' /etc/rc.local
    #增加启动项
@@ -97,6 +95,8 @@ fi
 cd vpnserver
  #开始安装
 ./.install.sh
-
+#备份vpnserver文件
+cp -a /root/vpnserver/vpnserver  /root/vpnserver/vpnserver1
+chmod 777 /root/vpnserver/vpnserver1
  #启动
 /root/vpnserver/vpnserver start
